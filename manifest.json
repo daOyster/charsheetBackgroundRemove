@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "DnDBeyondBGRemover",
+  "version": "1.0",
+
+  "description": "Removes the background on dnd beyond.",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+        "id": "dndbeyondbgremover@brandonost.net"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.dndbeyond.com/*"],
+      "js": ["dndbgremove.js"]
+    }
+  ]
+
+}
